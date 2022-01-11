@@ -13,4 +13,9 @@
 spl_autoload_register('classAutoLoader'); // spl is een build in functie van php, je kan daar alles insteken datje wil, bestanden die autoload zijn in je programma
 // callback, hij roep zichtzelf aan, deze callback heeft een functie ndg, dan gaat hij verder lezen, stringtolower, dan weet de spl wel wat hij moet doen.
 // zoekt bepaalde locatie de register apl is altijd voor
+
+function redirect($location){
+    header("Location: {$location}");
+}
+
 ?>

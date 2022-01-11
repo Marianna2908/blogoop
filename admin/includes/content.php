@@ -13,7 +13,7 @@
             ?>
             <hr>
             <h2>Ophalen van 1 enkele user</h2>
-<!--            --><?php
+<?php
             $result = User::find_user_by_id(1); // de user gaat bij find user by id, kijken in User
             echo $result->username; // dit zal de classes uitlezen, van de properties,
 

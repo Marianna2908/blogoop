@@ -26,6 +26,10 @@
                     die("Query kan niet worden uitgevoerd" . $this->connection->error); // om alles weg te krijgen, dit is ook een functie van de mysqli
                 }
             }
+            public function escape_string($string){
+                $escaped_string =$this->connection->real_escape_string($string); // zal gebruikt worden in User.php
+                return $escaped_string;
+            }
             function __construct(){
                 $this->open_db_connection(); // de functie op db connectie uit te voeren
             }
